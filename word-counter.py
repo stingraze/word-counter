@@ -12,4 +12,4 @@ counted = Counter(data)
 #Outputs to simple CSV (not cleaned)
 with open("./word-freq.csv" , mode='w') as outputfile:
     for k,v in  counted.most_common():
-        outputfile.write( "\"{}\" \"{}\"\n".format(k,v) )
+        outputfile.write( "\"{}\",\"{}\"\n".format(k,v) )
